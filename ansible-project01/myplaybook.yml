@@ -2,8 +2,8 @@
 - hosts: webapps
   become: yes
   tasks:
-    - name: install apcahe2 on debian
+    - name: install apache2 on debian
       apt:
-        name: apcahe2
+        name: apache2
         state: present 
 ...
