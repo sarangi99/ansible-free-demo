@@ -1,0 +1,9 @@
+---
+- hosts: webapps
+  become: yes
+  tasks:
+    - name: install apcahe2 on debian
+      apt:
+        name: apcahe2
+        state: present 
+...
